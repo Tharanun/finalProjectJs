@@ -1,0 +1,84 @@
+*{
+    font-family: "Montserrat", sans-serif
+    
+}
+body{
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 50vh 0vh;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+p{
+    color: white;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 8px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row; /* จัดเรียงแนวนอน */
+    justify-content: space-evenly; /* จัดการระยะห่างระหว่าง div */
+    margin-top: 64px;
+}
+
+
+.d-left{
+    margin: 0px 0px 0px 32px;
+    display: flex;
+    border: 1px solid #ff1d00;
+    box-shadow:0 0 7px #fff,
+        0 0 8px #fff,
+        0 0 16px #fff,
+        0 0 24px #FC42E3,
+        0 0 32px #ff1d00,
+        0 0 64px #FC42E3,
+        0 0 128px #ff1d00,
+        0 0 8px #FC42E3;
+    padding: 24px;
+}
+
+.d-center{
+    margin: 0px 0px 0px 32px;
+    display: flex;
+    border: 1px solid #7fff00;
+    box-shadow:0 0 7px #fff,
+        0 0 8px #fff,
+        0 0 16px #fff,
+        0 0 24px #FCF340,
+        0 0 32px #7fff00,
+        0 0 64px #FCF340,
+        0 0 128px #7fff00,
+        0 0 8px #FCF340;
+    padding: 24px;
+}
+
+.d-right{
+    margin: 0px 0px 0px 32px;
+    display: flex;
+    border: 1px solid #FFACFC;
+    box-shadow:0 0 7px #fff,
+        0 0 8px #fff,
+        0 0 16px #fff,
+        0 0 24px #F148FB,
+        0 0 32px #7122FA,
+        0 0 64px #560a86,
+        0 0 128px blueviolet,
+        0 0 8px blue;
+    padding: 24px;
+}

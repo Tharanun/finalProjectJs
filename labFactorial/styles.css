@@ -1,0 +1,147 @@
+body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+input[type="number"],
+button {
+    margin-bottom: 10px;
+}
+
+#result {
+    text-align: center;
+    color: white;
+}
+
+.solid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 128px;
+    border: 1px solid #ff1d00;
+    box-shadow:0 0 7px #fff,
+        0 0 8px #fff,
+        0 0 16px #fff,
+        0 0 24px #FC42E3,
+        0 0 32px #ff1d00,
+        0 0 64px #FC42E3,
+        0 0 128px #ff1d00,
+        0 0 8px #FC42E3;
+    padding: 24px;
+}
+.solid-green{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 128px;
+  border: 1px solid #7fff00;
+  box-shadow:0 0 7px #fff,
+      0 0 8px #fff,
+      0 0 16px #fff,
+      0 0 24px #FCF340,
+      0 0 32px #7fff00,
+      0 0 64px #FCF340,
+      0 0 128px #7fff00,
+      0 0 8px #FCF340;
+  padding: 24px;
+}
+
+.solid-blue{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 128px;
+  border: 1px solid #FFACFC;
+  box-shadow:0 0 7px #fff,
+      0 0 8px #fff,
+      0 0 16px #fff,
+      0 0 24px #F148FB,
+      0 0 32px #7122FA,
+      0 0 64px #560a86,
+      0 0 128px blueviolet,
+      0 0 8px blue;
+  padding: 24px;
+}
+
+label{
+    color: white;
+}
+
+.text-white{
+  color: white;
+}
+
+.button-85 {
+  padding: 0.6em 2em;
+  border: none;
+  outline: none;
+  color: rgb(255, 255, 255);
+  background: #111;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-85:before {
+  content: "";
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff7300,
+    #fffb00,
+    #48ff00,
+    #00ffd5,
+    #002bff,
+    #7a00ff,
+    #ff00c8,
+    #ff0000
+  );
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing-button-85 20s linear infinite;
+  transition: opacity 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+@keyframes glowing-button-85 {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.button-85:after {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #222;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
